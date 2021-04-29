@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | IP Address Tracker</title>
+		<link rel="stylesheet" href="./libraries/leafletjs/leaflet.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<section class="ip-input">
+			<h1>IP Address Tracker</h1>
+			<form>
+				<input
+					type="text"
+					placeholder="Search for any IP address or domain"
+					id="input-IP"
+				/>
+				<button type="submit" onclick="submitIP(event)">
+					<img src="./images/icon-arrow.svg" alt="arrow" />
+				</button>
+			</form>
+
+			<div class="ip-data">
+				<div>
+					<h3>IP Address</h3>
+					<p id="ip"></p>
+				</div>
+				<div>
+					<h3>Location</h3>
+					<p id="location"></p>
+				</div>
+				<div>
+					<h3>Timezone</h3>
+					<p id="timezone"></p>
+				</div>
+				<div>
+					<h3>ISP</h3>
+					<p id="isp"></p>
+				</div>
+			</div>
+		</section>
+
+		<div class="map" id="map"></div>
+
+		<script src="https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="./libraries/leafletjs/leaflet.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

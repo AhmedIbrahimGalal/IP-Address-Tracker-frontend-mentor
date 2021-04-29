@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap);
+
+/* general styles */
+body {
+	letter-spacing: 1px;
+	margin: 0;
+	font-family: "Rubik", sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+.ip-input {
+	min-height: 300px;
+	background: url(../images/pattern-bg.png) no-repeat center;
+	background-size: cover;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+}
+.ip-input h1 {
+	font-size: 30px;
+	color: #fff;
+}
+.ip-input form {
+	display: flex;
+}
+.ip-input form input {
+	width: 330px;
+	height: 50px;
+	padding: 1rem;
+	outline: none;
+	border-radius: 1rem 0 0 1rem;
+	border: 1px solid #fff;
+	font-size: 18px;
+}
+.ip-input form button {
+	width: 50px;
+	height: 50px;
+	outline: none;
+	background-color: hsl(0, 0%, 17%);
+	border-radius: 0 1rem 1rem 0;
+	border: 0;
+	cursor: pointer;
+}
+
+.ip-input .ip-data {
+	width: 70%;
+	min-height: 100px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -50px;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 1rem;
+	padding: 1rem;
+	z-index: 1000;
+	flex-wrap: wrap;
+	box-shadow: 0 0 7px 0px #eee;
+}
+.ip-input .ip-data div {
+	padding: 0.3rem 2rem;
+	width: 25%;
+}
+.ip-input .ip-data div:not(:last-child) {
+	border-right: 1px solid hsl(0, 0%, 17%);
+}
+.ip-input .ip-data div h3 {
+	font-size: 15px;
+	color: hsl(0, 0%, 59%);
+	margin: 0;
+}
+.ip-input .ip-data div p {
+	font-size: 20px;
+	color: hsl(0, 0%, 17%);
+	font-weight: 600;
+}
+.map {
+	min-height: 325px;
+}
+@media (max-width: 375px) {
+	.ip-input h1 {
+		font-size: 20px;
+	}
+	.ip-input form input {
+		width: 220px;
+		height: 40px;
+		padding: 0.5rem;
+		font-size: 12px;
+	}
+	.ip-input form button {
+		width: 40px;
+		height: 40px;
+	}
+	.ip-input .ip-data {
+		bottom: -90px;
+		width: 50%;
+	}
+	.ip-input .ip-data div {
+		width: 100%;
+		text-align: center;
+		padding: 0.3rem 0.5rem;
+	}
+	.ip-input .ip-data div:not(:last-child) {
+		border: none;
+	}
+	.ip-input .ip-data div h3 {
+		font-size: 12px;
+	}
+	.ip-input .ip-data div p {
+		font-size: 15px;
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+}
